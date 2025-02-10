@@ -7,10 +7,11 @@ declare var Live2D : any;
 declare var data : any;
 
 @Component({
-	selector: 'app-waifu',
-	templateUrl: './waifu.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
-	styleUrls: ['./waifu.component.css']
+    selector: 'app-waifu',
+    templateUrl: './waifu.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrls: ['./waifu.component.css'],
+    standalone: false
 })
 export class WaifuComponent implements OnInit {
 	private i : any;
@@ -92,7 +93,7 @@ export class WaifuComponent implements OnInit {
 		},
 		'fa-info-circle': (event: any) => {
 			event.preventDefault();
-			open("https://github.com/JayantGoel001/JayantGoel001.github.io/");
+			open("https://github.com/shirshsoni/shirshsoni.github.io/");
 		},
 		'fa-times': (event: any) => {
 			event.preventDefault();

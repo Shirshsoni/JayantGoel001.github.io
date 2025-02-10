@@ -2,13 +2,14 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {SwUpdate} from "@angular/service-worker";
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    standalone: false
 })
 
 export class AppComponent implements AfterViewInit,OnInit {
-	title = 'Jayant Goel (JayantGoel001)\'s Personal Portfolio';
+	title = 'Shirsh Soni (shirshsoni)\'s Personal Portfolio';
 
 	constructor(private swUpdate : SwUpdate) {}
 	ngOnInit(){
@@ -29,7 +30,7 @@ export class AppComponent implements AfterViewInit,OnInit {
 		document.head.appendChild(link);
 
 		console.log(`%c${this.title}`, "color:#F56540; font-size:27px");
-		console.log("%chttps://github.com/JayantGoel001/JayantGoel001.github.io", "font-size:17px");
+		console.log("%chttps://github.com/shirshsoni/shirshsoni.github.io", "font-size:17px");
 	}
 
 	ngAfterViewInit() : void {
